@@ -4,7 +4,9 @@
     "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "prepare": "husky install",
+    "g": "umi generate"
   },
   "dependencies": {
     "@umijs/plugins": "^4.0.28",
@@ -14,6 +16,19 @@
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
-    "typescript": "^4.8.4"
+    "@umijs/lint": "^4.0.28",
+    "eslint": "^8.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "stylelint": "^14.14.0",
+    "typescript": "^4.8.4",
+    "prettier": "^2",
+    "prettier-plugin-organize-imports": "^3",
+    "prettier-plugin-packagejson": "^2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,less}": [
+      "umi lint"
+    ]
   }
 }
