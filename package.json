@@ -4,6 +4,7 @@
     "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
+    "plugin:list": "umi plugin list",
     "start": "npm run dev",
     "prepare": "husky install",
     "g": "umi generate"
