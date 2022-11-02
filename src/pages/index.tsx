@@ -1,4 +1,5 @@
 import yayJpg from '../assets/yay.jpg';
+import { Button } from 'antd';
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
       <p>
         To get started, edit <code>pages/index.tsx</code> and save to reload.
       </p>
+      <Button type="primary">antd Button</Button>
     </div>
   );
 }
